@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Create a Message";
+}
+
+<h2>Create A message</h2>
+
+<form method="post" action="/message/create">
+    <input name="messageTitle" id="messsageTitle" type="text"/>
+    <input name="messageContent" id="messsageContent" type="text" />
+    <input value="Submit" type="submit" />
+</form>
