@@ -6,15 +6,15 @@
     ViewBag.Title = "Create a Message";
 }
 
-<h2>Create A message</h2>
+<h2>Edit a message</h2>
 
 <div asp-validation-summary="ValidationSummary.All"></div>
 
-<form method="post" action="/message/create">
+<form method="post" asp-controller="message" asp-action="edit" asp-antiforgery="true">
     @Html.AntiForgeryToken()
     <label asp-for="MessageTitle"></label>
-    @Html.EditorFor(m => m.MessageTitle)<br />
+    <input asp-for="MessageTitle" /><br />
     <label asp-for="MessageContent"></label>
     <input asp-for="MessageContent" /><br />
-    <input value="Submit" type="submit" />
+    <input value= "Edit Msg" type="submit" />
 </form>

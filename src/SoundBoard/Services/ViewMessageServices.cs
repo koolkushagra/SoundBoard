@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SoundBoard.Models
+namespace SoundBoard.Services
 {
-    public class Class
+    public class ViewMessageServices
     {
     }
 }
